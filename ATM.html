@@ -6,32 +6,45 @@
     <title>ATM Application</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
 </head>
-<body class="atm-page">
+<body>
     <header>
         <h1 id="atm-header">ATM Application</h1>
         <nav>
             <ul>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="spedens.html">Arduino Speed Game</a></li>
+                <li><a href="moviepage.html">Movie Page</a></li>
+                <li><a href="spedens.html">Arduino Speed game</a></li>
+
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="project-details">
-            <h2>About the ATM Application Project</h2>
+            <h2>Project Overview</h2>
             <p>
-                In this project, we developed an ATM application that integrated an RFID card reader to authenticate users. 
-                The system featured a REST API built with Node.js and SQL to handle backend operations, while the frontend was developed using C++ for a responsive user interface.
+                This project is an ATM application where users can perform basic banking transactions such as checking balances and withdrawing money.
+                The application provides an interactive user interface and ensures secure transactions.
+                It was developed using Node.js, Express, SQL, and C++ for backend processing and functionality.
             </p>
-            <ul>
-                <li>🔗<a href="https://github.com/tvt23-pankkiprojekti/SPL_Group1" target="_blank">GitHub Repository of the project</a></li>
-                <li>🔑 RFID Card Reader for user authentication</li>
-                <li>🌐 REST API built with Node.js and SQL for backend operations</li>
-                <li>🖥️ Frontend interface developed in C++ for user interaction with the ATM machine</li>
+            <p>
+                The aim of the project was to build a system that simulates the operations of an ATM. The architecture of the target system follows a client-server model.
+                In this project, the client is the ATM machine, which consists of various system components that were defined in detail during the project specification phase. 
+                The server machine contains a database server and other software that were also defined during the project specification phase. 
+                Data sent from the client application is stored in a database on the server machine via the network.
+            </p>
+        </section>
         
+        
+
+        <section class="project-details">
+            <h2>Key Features of the ATM Application</h2>
+            <ul>
+                <li>💳 User login and authentication system using RFID card reader</li>
+                <li>💰 Secure money withdrawals</li>
+                <li>🔒 Account balance checking</li>
+                <li>⚙️ Backend powered by Node.js and SQL</li>
             </ul>
         </section>
 
@@ -41,61 +54,59 @@
                 <iframe 
                     width="560" 
                     height="315" 
-                    src="https://www.youtube.com/embed/L0B_aV7m6qA" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+                    src="https://www.youtube.com/embed/L0B_aV7m6qA"  
+                    width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="ATM Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                 </iframe>
             </div>
         </section>
 
-        <section class="project-table">
-            <h2>Project Overview</h2>
+        <section class="project-details">
+            <h2>Project Details</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Task</th>
-                        <th>Description</th>
-                        <th>Technology/Language</th>
+                        <th>Programming Language / Component</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>RFID Card Reader Integration</td>
-                        <td>Implemented RFID functionality to authenticate users by reading card data.</td>
-                        <td>C++</td>
+                        <td>User Authentication</td>
+                        <td>Node.js, Express, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Money Withdrawals</td>
+                        <td>Node.js, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Balance Checking</td>
+                        <td>Node.js, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Funds Transfer</td>
+                        <td>Node.js, SQL</td>
                     </tr>
                     <tr>
                         <td>Backend Development</td>
-                        <td>Created a REST API using Node.js and SQL to handle user accounts and transaction histories.</td>
-                        <td>Node.js, SQL</td>
-                    </tr>
-                    <tr>
-                        <td>Frontend Development</td>
-                        <td>Designed a user interface for interacting with the ATM machine.</td>
-                        <td>C++</td>
-                    </tr>
-                    <tr>
-                        <td>Database Integration</td>
-                        <td>Connected the RFID reader with a database to validate users and record transactions.</td>
-                        <td>Node.js, SQL</td>
+                        <td>Node.js, Express, SQL</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
+        <!-- GitHub Repo link -->
+        <section class="project-details">
+            <h2>GitHub Repository</h2>
+            <li>🔗<a href="https://github.com/Webproject-G11/movie_page" target="_blank">GitHub Repository of the project</a></li>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2024 Elisabeth Lohi</p>
-        
     </footer>
 
     <script src="assets/script.js"></script>
 </body>
 </html>
-
-
-
-
-

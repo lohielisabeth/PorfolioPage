@@ -14,30 +14,33 @@
             <ul>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="ATM.html">ATM Application</a></li>
+                <li><a href="moviepage.html">Movie Page</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="project-description">
+        <section class="project-details">
             <h2>Project Overview</h2>
             <p>
-                This project is a speed game where the player must press the correct button when the LED lights up.
-                There are a total of four LEDs that light up in sequence, and the player has to react quickly.
-                The game speeds up over time, making it more challenging.
-                The project used the Arduino platform, and the programming was done in C++.
+                The Arduino Speed Game project involved designing and implementing a reaction-based game using Arduino. The game utilized 5 buttons for player input, LEDs for visual feedback, and a 7-segment display to show scores. Buttons were connected with debouncing handled programmatically, and interrupts were used to detect presses. A Timer1 interrupt generated random sequences of numbers, which players had to replicate using buttons. Correct inputs increased the game's speed, while incorrect inputs ended the game.
+
+The display module used two serial-to-parallel shift registers (74HC595) to drive the 7-segment displays without relying on built-in Arduino libraries. LEDs and buttons were abstracted through modular functions, ensuring flexibility and clear game logic.
+
+The game logic managed sequences, compared user input against generated patterns, and displayed results dynamically. Timer-based difficulty adjustments ensured consistent challenge levels across implementations.
             </p>
         </section>
 
         <section class="project-details">
             <h2>Key Features of the Speed Game</h2>
             <ul>
-                <li>Multiple LED lights to create a dynamic gameplay experience</li>
-                <li>Game logic that increases difficulty as the game progresses</li>
-                <li>Button-based user input for responsive interactivity</li>
-                <li>Real-time reaction tracking and score display using a 7-segment display</li>
-                <li>Custom circuit assembly using LEDs, resistors, and microcontrollers</li>
+                <li>💡 Multiple LED lights to create a dynamic gameplay experience</li>
+                <li>🎮 Game logic that increases difficulty as the game progresses</li>
+                <li>🕹️ Button-based user input for responsive interactivity</li>
+                <li>📊 Real-time reaction tracking and score display using a 7-segment display</li>
+                <li>🔧 Custom circuit assembly using LEDs, resistors, and microcontrollers</li>
             </ul>
+            
         </section>
 
         <section class="project-video">
@@ -71,22 +74,31 @@
                     </tr>
                     <tr>
                         <td>Game Logic</td>
-                        <td>C++</td>
+                        <td>Arduino, C++</td>
                     </tr>
                     <tr>
                         <td>Button Functionality</td>
-                        <td>Arduino, C++</td>
+                        <td>Arduino, C++ (with interrupts and debouncing)</td>
                     </tr>
                     <tr>
                         <td>Interactivity</td>
                         <td>Arduino, C++</td>
                     </tr>
                     <tr>
+                        <td>Display Control</td>
+                        <td>C++, 74HC595 shift registers, 7-segment displays</td>
+                    </tr>
+                    <tr>
                         <td>Circuit Assembly</td>
-                        <td>LEDs, 7-segment display, microcontrollers</td>
+                        <td>LEDs, buttons, 7-segment display, 74HC595, Arduino</td>
                     </tr>
                 </tbody>
             </table>
+            
+        </section>
+        <section class="project-details">
+            <h2>GitHub Repository</h2>
+            <li>🔗<a href="https://github.com/lohielisabeth/Speed-Game" target="_blank">GitHub Repository of the project</a></li>
         </section>
     </main>
 

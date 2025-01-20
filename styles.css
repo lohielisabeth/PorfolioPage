@@ -25,10 +25,13 @@
 
 
 .button-container {
-    display: flex; 
+    display: flex;
     justify-content: center; 
-    gap: 40px; 
-    margin: 50px 0; 
+    gap: 20px; 
+    margin: 50px 0;
+    font-family: "Molle", serif;
+    font-family: "Damion", serif;
+    font-size: 10rem;
 }
 
 .button {
@@ -45,6 +48,7 @@
     background-size: cover; 
     background-position: center; 
     margin: 40px; 
+    
 }
 
 
@@ -91,7 +95,7 @@
     font-family: 'Allura', cursive;
 }
 
-#atm-header, #spedens-header {
+#atm-header, #spedens-header, #movie-header {
     background-image: url('images/image6.jpg'); 
     padding: 30px;
     clip-path: ellipse(70% 50% at 50% 50%); 
@@ -116,6 +120,7 @@ body.projects-page {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 
@@ -158,6 +163,7 @@ body.projects-page {
     background-color: rgba(255, 184, 236, 0);
     transition: background-color 0.3s;
     z-index: 1; 
+    
 }
 
 .project:hover::before {
@@ -165,19 +171,13 @@ body.projects-page {
 }
 
 
-.button-container {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    margin: 50px 0;
-}
 
 .flex-container {
     display: flex;                
     flex-wrap: wrap;             
     justify-content: space-around;
     align-items: flex-start;     
-    margin: 20px;                
+    margin: 20px;    
 }
 
 #index-nav {
@@ -385,5 +385,42 @@ tr:hover {
     text-align: center;
     margin: 10px 0; 
 }
+
+/* Project Details Section */
+.project-details {
+    background-color: rgb(255, 184, 236);
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 900px; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.project-details h2 {
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.project-details p {
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.6; 
+    text-align: justify; 
+}
+
+.project-details ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.project-details ul li {
+    font-size: 1rem; 
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
 
 
