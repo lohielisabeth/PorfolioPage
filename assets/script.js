@@ -12,77 +12,61 @@ function projectClicked(projectUrl) {
     }, 500); 
 }
 
-
 function aboutmeClicked() {
     alert('Navigating to About Me');
-    window.location.href = 'about.html'; // Siirry "About Me" -sivulle
+    window.location.href = 'about.html';
 }
 
-// Hakee kaikki projektikortit
 const projectLinks = document.querySelectorAll('.project');
 
-// Käy läpi jokaisen projektikortin ja lisää tapahtumankuuntelijat
 projectLinks.forEach(link => {
     link.addEventListener('mouseover', () => {
-        link.style.backgroundColor = 'rgba(255, 184, 236, 0.7)'; // Muuttaa taustaväriä
-        link.style.transform = 'scale(1.05)'; // Suurennus
+        link.style.backgroundColor = 'rgba(255, 184, 236, 0.7)'; 
+        link.style.transform = 'scale(1.05)'; 
     });
 
     link.addEventListener('mouseout', () => {
-        link.style.backgroundColor = 'rgba(255, 184, 236, 0)'; // Palauttaa alkuperäisen taustavärin
-        link.style.transform = ''; // Palauttaa alkuperäisen koon
+        link.style.backgroundColor = 'rgba(255, 184, 236, 0)'; 
+        link.style.transform = ''; 
     });
 });
 
-// Funktio kellon ajan päivittämiseksi
 function updateClock() {
-    const now = new Date(); // Hakee nykyisen ajan
+    const now = new Date(); 
     const options = {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: false // 24 tunnin muoto
+        hour12: false 
     };
     
-    // Muuttaa ajan stringiksi
     const timeString = now.toLocaleTimeString([], options);
     
-    // Päivittää kellon HTML-elementin sisällön
     document.getElementById('clock').textContent = timeString;
 }
 
-// Päivittää kello heti, kun sivu ladataan
 updateClock();
 
-// Päivittää kellon joka sekunti
 setInterval(updateClock, 1000);
 
+let inactivityTime = 0;
+let timer; 
 
-let inactivityTime = 0; // Muuttuja aikakatkaisuajalle
-let timer; // Timer-muuttuja
-
-// Funktio, joka käynnistää aikakatkaisun
 function startTimer() {
     timer = setTimeout(() => {
-        alert("Aikakatkaisu"); // Näyttää ilmoituksen
-    }, 15000); // 15000 ms = 15 sekuntia
+        alert("Aikakatkaisu"); 
+    }, 15000); 
 }
 
-// Funktio, joka nollaa aikakatkaisun
 function resetTimer() {
-    clearTimeout(timer); // Pysäyttää aikakatkaisun
-    inactivityTime = 0; // Nollaa aikakatkaisuajamittari
-    startTimer(); // Käynnistää aikakatkaisun uudelleen
+    clearTimeout(timer); 
+    inactivityTime = 0; 
+    startTimer(); 
 }
 
-// Lisää tapahtumakuuntelijat vuorovaikutukseen
 window.onload = () => {
-    startTimer(); // Käynnistää aikakatkaisun sivun ladattaessa
-
-    // Lista tapahtumista, jotka nollaavat aikakatkaisun
+    startTimer(); 
     const events = ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'];
-
-    // Lisää tapahtumakuuntelijat
     events.forEach(event => {
         document.addEventListener(event, resetTimer, false);
     });
