@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; 
+    color: rgb(151, 92, 122);  
     font-size: 2.5rem;
     text-decoration: none; 
     border-radius: 50%;
@@ -53,10 +53,10 @@
 
 
 .button1 {
-    background-image: url('images/image5.jpg');
+    background-image: url('images/image3.jpg');
 }
 .button2 {
-    background-image: url('images/pfp.jpg'); 
+    background-image: url('images/image3.jpg'); 
 }
 
 .button:hover {
@@ -76,7 +76,7 @@
 }
 
 #projects-header, #about-header {
-    background-image: url('images/image5.jpg');
+    background-image: url('images/image3.jpg');
     padding: 30px;
     clip-path: ellipse(70% 50% at 50% 50%);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
@@ -91,12 +91,12 @@
         2px 2px 2px rgba(0, 0, 0, 0.8),
         4px 4px 4px rgba(0, 0, 0, 0.6), 
         6px 6px 6px rgba(0, 0, 0, 0.4); 
-    color: rgb(255, 184, 236);
+    color: rgb(151, 92, 122); 
     font-family: 'Allura', cursive;
 }
 
 #atm-header, #spedens-header, #movie-header {
-    background-image: url('images/image6.jpg'); 
+    background-image: url('images/image3.jpg'); 
     padding: 30px;
     clip-path: ellipse(70% 50% at 50% 50%); 
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2); 
@@ -111,12 +111,12 @@
         2px 2px 2px rgba(0, 0, 0, 0.8),
         4px 4px 4px rgba(0, 0, 0, 0.6), 
         6px 6px 6px rgba(0, 0, 0, 0.4); 
-    color: #ff80f3; 
+    color: rgb(151, 92, 122); 
 }
 
 
 body.projects-page {
-    background-color: rgb(253, 117, 212);
+    background-color: rgb(255 182 193);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ body.projects-page {
     opacity: 0; 
     position: relative;
     animation: fadeIn 0.8s forwards; 
-    background-image: url('images/image6.jpg');
+    background-image: url('images/image3.jpg');
     background-color: rgba(255, 184, 236, 0); 
     padding: 20px;            
     overflow: hidden;    
@@ -167,7 +167,7 @@ body.projects-page {
 }
 
 .project:hover::before {
-    background-color: rgba(255, 184, 236, 0.7);
+    background-color: rgb(248, 192, 202, 0.7);
 }
 
 
@@ -181,7 +181,7 @@ body.projects-page {
 }
 
 #index-nav {
-    background-color: rgb(255, 184, 236);
+    background-color: rgb(248, 192, 202);
     padding: 50px 40px; 
     margin: 20px auto;
     border-radius: 50%; 
@@ -193,8 +193,8 @@ body.projects-page {
 
 
 nav {
-    background-color: rgb(255, 184, 236);
-    color: deeppink;
+    background-color: rgb(248, 192, 202);
+    color: rgb(151, 92, 122); 
     padding: 15px 30px; 
     margin: 20px auto;
     border-radius: 15px; 
@@ -204,7 +204,7 @@ nav {
 }
 
 nav:hover {
-    background-color: rgb(255, 164, 226);
+    background-color: rgb(214, 176, 196);
 }
 
 nav ul {
@@ -223,7 +223,7 @@ nav li {
 nav a {
     font-family: Garamond, serif;
     text-decoration: none; 
-    color: deeppink; 
+    color: rgb(151, 92, 122); 
     padding: 10px 15px; 
     border-radius: 5px; 
     transition: color 0.3s, background-color 0.3s; 
@@ -232,19 +232,19 @@ nav a {
 nav a:hover {
     text-decoration: none; 
     color: white; 
-    background-color: deeppink; 
+    background-color: rgb(151, 92, 122); 
 }
 
 .hero {
     font-family: 'Allura', cursive;
-    color: rgb(253, 117, 212);
+    color: rgb(151, 92, 122); 
     text-shadow: 
         4px 4px 10px rgba(0, 0, 0, 0.7), 
         0 0 25px rgba(0, 0, 0, 0.5),
         0 0 50px rgba(0, 0, 0, 0.3); 
     position: relative;
     height: 300px; 
-    background-image: url('images/image6.jpg');
+    background-image: url('images/image3.jpg');
     background-size: contain;
     background-position: center;
     display: flex;
@@ -270,7 +270,7 @@ nav a:hover {
 }
 
 body {
-    background-color: rgb(253, 117, 212);
+    background-color: rgb(255 182 193);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -285,9 +285,9 @@ main {
 
 footer {
     font-family: Garamond, serif;
-    background-color: rgb(255, 184, 236); 
+    background-color: rgb(151, 92, 122); 
     text-align: center; 
-    color: deeppink;
+    color: rgb(255 182 193);
     padding: 10px;
     position: relative;
     bottom: 0; 
@@ -301,6 +301,7 @@ footer {
     justify-content: center;
     text-align: center; 
     margin: 20px;
+    color: rgb(151, 92, 122);
 }
 
 .video-container {
@@ -329,9 +330,6 @@ footer {
 }
 
 
-
-
-
 table {
     width: 80%; 
     border-collapse: collapse;
@@ -346,7 +344,7 @@ th, td {
 
 th {
     background-color: rgba(255, 184, 236, 0.8); 
-    color: deeppink; 
+    color: rgb(151, 92, 122); 
 }
 
 tr:nth-child(even) {
@@ -363,8 +361,8 @@ tr:hover {
     max-width: 800px; 
     margin: 20px auto;
     padding: 20px;
-    background-color: rgb(255, 184, 236);
-    color: magenta;
+    background-color: rgb(248, 192, 202);
+    color: rgb(151, 92, 122); 
     border-radius: 15px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     text-align: center; 
@@ -381,14 +379,14 @@ tr:hover {
 
 .clock {
     font-size: 1.1rem; 
-    color: deeppink;
+    color: rgb(151, 92, 122); 
     text-align: center;
     margin: 10px 0; 
 }
 
 /* Project Details Section */
 .project-details {
-    background-color: rgb(255, 184, 236);
+    background-color: rgb(247, 193, 214);
     border-radius: 10px;
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
