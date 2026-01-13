@@ -24,54 +24,79 @@
         <section class="project-details">
             <h2>About the Movie Page Project</h2>
             <p>
-                The project involved developing a dynamic and responsive web application for movie enthusiasts. The frontend was built using React, and the backend was powered by Node.js. PostgreSQL was used as the database for storing user data and other relevant information. The application integrates with open data sources, including The Movie Database (TMDb) API for movie information and the Finnkino API for showtimes.
-                Users can search for movies, view Finnkino showtimes, and leave reviews. By signing in, users can add movies to their favorites and provide feedback on watched movies. Node.js and SQL were utilized to manage movie data and ensure secure user authentication.
+                The project is a dynamic and responsive web application designed for movie enthusiasts. The frontend was developed using <strong>React</strong>, incorporating <strong>React Router</strong> for navigation and <strong>Context API</strong> for managing user state. The backend was built with <strong>Node.js</strong> and <strong>Express</strong>, using <strong>PostgreSQL</strong> to store user data, reviews, and favorites.
             </p>
+            <p>
+                The application integrates with open data sources, including <strong>The Movie Database (TMDb) API</strong> for fetching detailed movie information (such as title, poster, and release date) and the <strong>Finnkino API</strong> for showtimes. Users can register and log in to the application to submit their own movie reviews, which are stored securely in the PostgreSQL database and displayed only on the application itself.
+            </p>
+        </section>
+
+
+        <section class="project-images">
+            <h2>Project Screenshots</h2>
+            <div class="image-gallery">
+                <img src="images/moviepage.jpg" alt="Screenshot of the main home page">
+                <img src="images/moviepage2.jpg" alt="Screenshot of search">
+                <img src="images/moviepage3.jpg" alt="Screenshot of favorites feature">
+            </div>
         </section>
 
         <section class="project-details">
             <h2>Key Features of the Movie Page</h2>
-            <ul>
-                <li>🔒 User registration and login system with secure password handling</li>
-                <li>🎥 Movie search functionality with various search criteria</li>
-                <li>📅 Ability to view showtimes for movies at Finnkino theaters</li>
-                <li>⭐ Movie review system allowing users to rate and review movies</li>
-                <li>📋 Favorites list where users can store and share their preferred movies</li>
-                <li>📱 Responsive design to ensure the app works well on different screen sizes</li>
-            </ul>
-            
+                <ul>
+                    <li>🔒 Secure user registration and login system with password validation</li>
+                    <li>🎥 Advanced movie search functionality with multiple search criteria</li>
+                    <li>📅 View showtimes for movies at Finnkino theaters in real-time</li>
+                    <li>⭐ User review system with ratings and detailed movie feedback</li>
+                    <li>📱 Responsive design for optimal experience across all devices</li>
+                </ul>
         </section>
 
 
-        <section class="project-details">
+       <section class="project-details">
             <h2>Project Details</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Task</th>
-                        <th>Programming Language / Component</th>
+                        <th>Task / Feature</th>
+                        <th>Technologies / Highlights</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Movie Search</td>
-                        <td>React, JavaScript</td>
+                        <td>React, JavaScript, API fetching, Dynamic UI</td>
                     </tr>
                     <tr>
                         <td>Finnkino Showtimes</td>
-                        <td>React, API Integration</td>
+                        <td>React, API Integration, Asynchronous Data Handling</td>
                     </tr>
                     <tr>
                         <td>Review System</td>
-                        <td>React, Node.js, SQL</td>
+                        <td>React, Node.js, SQL, CRUD Operations, User-specific Reviews</td>
                     </tr>
                     <tr>
                         <td>Favorites Feature</td>
-                        <td>React, Node.js, SQL</td>
+                        <td>React, Node.js, SQL, Persistent User Data</td>
+                    </tr>
+                    <tr>
+                        <td>User Authentication & Registration</td>
+                        <td>
+                            React Router, Protected Routes, Node.js, Express, SQL<br>
+                            Password validation (regex), Secure login flow, JWT/localStorage authentication
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>User Profile & Reviews Page</td>
+                        <td>
+                            React, Context API, useEffect & useState<br>
+                            Fetching user-specific data from backend & TMDb API<br>
+                            Conditional rendering (loading, error, login state), Navigation handling
+                        </td>
                     </tr>
                     <tr>
                         <td>Backend Development</td>
-                        <td>Node.js, SQL</td>
+                        <td>Node.js, Express, SQL, REST API, Data Validation, Authentication</td>
                     </tr>
                 </tbody>
             </table>
@@ -80,12 +105,14 @@
         <!-- GitHub Repo link -->
         <section class="project-details">
             <h2>GitHub Repository</h2>
-            <li>🔗<a href="https://github.com/Webproject-G11/movie_page" target="_blank">GitHub Repository of the project</a></li>
+            <ul>
+                <li>🔗 <a href="https://github.com/Webproject-G11/movie_page" target="_blank">GitHub Repository of the project</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Elisabeth Lohi</p>
+        <p>&copy; 2026 Elisabeth Lohi</p>
     </footer>
 
     <script src="assets/script.js"></script>

@@ -95,7 +95,7 @@
     font-family: 'Allura', cursive;
 }
 
-#atm-header, #spedens-header, #movie-header {
+#atm-header, #spedens-header, #movie-header, #minigames-header {
     background-image: url('images/image3.jpg'); 
     padding: 30px;
     clip-path: ellipse(70% 50% at 50% 50%); 
@@ -294,7 +294,7 @@ footer {
     width: 100%; 
 }
 
-.project-description, .project-video, .project-details {
+.project-description, .project-video, .project-details, .project-images {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,6 +419,31 @@ tr:hover {
     color: #555; 
     margin-bottom: 10px; 
 }
+
+.project-images {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Keskittää kuvat vaakasuunnassa */
+    gap: 1rem; /* Väli kuvien välillä */
+    flex-wrap: wrap; /* Siirtää kuvat uudelle riville pienemmällä näytöllä */
+}
+
+.image-gallery img {
+    width: 30%; /* Kolme kuvaa riville */
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
 
 
 

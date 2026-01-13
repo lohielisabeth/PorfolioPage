@@ -16,7 +16,6 @@
                 <li><a href="moviepage.html">Movie Page</a></li>
                 <li><a href="spedens.html">Arduino Speed game</a></li>
                 <li><a href="mobilegame.html">Minigames</a></li>
-
             </ul>
         </nav>
     </header>
@@ -24,39 +23,38 @@
     <main>
         <section class="project-details">
             <h2>Project Overview</h2>
-            <p>
-                This project is an ATM application where users can perform basic banking transactions such as checking balances and withdrawing money.
-                The application provides an interactive user interface and ensures secure transactions.
-                It was developed using Node.js, Express, SQL, and C++ for backend processing and functionality.
-            </p>
-            <p>
-                The aim of the project was to build a system that simulates the operations of an ATM. The architecture of the target system follows a client-server model.
-                In this project, the client is the ATM machine, which consists of various system components that were defined in detail during the project specification phase. 
-                The server machine contains a database server and other software that were also defined during the project specification phase. 
-                Data sent from the client application is stored in a database on the server machine via the network.
-            </p>
+                <p>
+                    This project is a functional <strong>ATM application</strong> that allows users to securely perform basic banking operations, including checking account balances, withdrawing money, and viewing recent transactions.
+                    The frontend interface was built with <strong>Qt/C++</strong>, providing an interactive user interface with support for <strong>RFID card authentication</strong> and PIN code entry. 
+                    Users can select predefined withdrawal amounts or enter custom amounts using the "Other" option.
+                    The backend is implemented with <strong>Node.js, Express, and PostgreSQL</strong>, handling account data, transaction history, and secure authentication.
+                </p>
+                <p>
+                    The architecture follows a <strong>client-server model</strong>: the ATM machine acts as a client with multiple UI components (balance display, withdrawal interface, transaction history),
+                    and communicates over the network with a server that manages the database and provides API endpoints. User account data, balances, and transaction history are securely stored in PostgreSQL.
+                </p>
         </section>
-        
-        
 
         <section class="project-details">
             <h2>Key Features of the ATM Application</h2>
-            <ul>
-                <li>💳 User login and authentication system using RFID card reader</li>
-                <li>💰 Secure money withdrawals</li>
-                <li>🔒 Account balance checking</li>
-                <li>⚙️ Backend powered by Node.js and SQL</li>
-            </ul>
+                <ul>
+                    <li>💳 User authentication using <strong>RFID card reader</strong> and PIN code</li>
+                    <li>💰 Secure money withdrawals with real-time balance updates, including predefined and custom amounts</li>
+                    <li>🔒 Account balance checking and credit limit management</li>
+                    <li>📋 Transaction history display (last 5 transactions)</li>
+                    <li>⚙️ Backend implemented in <strong>Node.js</strong> and <strong>PostgreSQL</strong> for secure data persistence</li>
+                    <li>🖥️ Responsive and interactive frontend built in <strong>Qt/C++</strong></li>
+                </ul>
+
         </section>
 
         <section class="project-video">
             <h2>Watch the Video</h2>
             <div class="video-container">
                 <iframe 
-                    width="560" 
-                    height="315" 
                     src="https://www.youtube.com/embed/L0B_aV7m6qA"  
-                    width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="ATM Video"
+                    width="640" height="360" frameborder="0" scrolling="no" allowfullscreen 
+                    title="ATM Video"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                 </iframe>
             </div>
@@ -67,36 +65,36 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Task</th>
-                        <th>Programming Language / Component</th>
+                        <th>Task / Feature</th>
+                        <th>Technologies / Components</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>User Authentication</td>
-                        <td>Node.js, Express, SQL</td>
+                        <td>Qt/C++ (UI), Node.js + Express (API), PostgreSQL (Database)</td>
                     </tr>
                     <tr>
                         <td>Money Withdrawals</td>
-                        <td>Node.js, SQL</td>
+                        <td>Qt/C++ (UI), Node.js (Backend logic), PostgreSQL (Balance update)</td>
                     </tr>
                     <tr>
-                        <td>Balance Checking</td>
-                        <td>Node.js, SQL</td>
+                        <td>Balance Checking & Credit Limit</td>
+                        <td>Qt/C++ (UI), Node.js + PostgreSQL (Backend + DB)</td>
                     </tr>
                     <tr>
-                        <td>Funds Transfer</td>
-                        <td>Node.js, SQL</td>
+                        <td>Transaction History (Last 5 Transactions)</td>
+                        <td>Qt/C++ (Table UI), Node.js + PostgreSQL (Data fetch & storage)</td>
                     </tr>
                     <tr>
                         <td>Backend Development</td>
-                        <td>Node.js, Express, SQL</td>
+                        <td>Node.js + Express (REST API), PostgreSQL (Database)</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- GitHub Repo link -->
+
         <section class="project-details">
             <h2>GitHub Repository</h2>
             <li>🔗<a href="https://github.com/tvt23-pankkiprojekti/SPL_Group1" target="_blank">GitHub Repository of the project</a></li>
@@ -105,7 +103,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Elisabeth Lohi</p>
+        <p>&copy; 2026 Elisabeth Lohi</p>
     </footer>
 
     <script src="assets/script.js"></script>

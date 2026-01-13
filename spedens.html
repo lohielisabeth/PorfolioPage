@@ -24,23 +24,32 @@
         <section class="project-details">
             <h2>Project Overview</h2>
             <p>
-                The Arduino Speed Game project involved designing and implementing a reaction-based game using Arduino. The game utilized 5 buttons for player input, LEDs for visual feedback, and a 7-segment display to show scores. Buttons were connected with debouncing handled programmatically, and interrupts were used to detect presses. A Timer1 interrupt generated random sequences of numbers, which players had to replicate using buttons. Correct inputs increased the game's speed, while incorrect inputs ended the game.
+                The <strong>Arduino Speed Game</strong> is a reaction-based game designed and implemented entirely on an Arduino platform. 
+                The game challenges players to replicate sequences of visual cues using <strong>5 input buttons</strong>, with immediate feedback provided via <strong>LEDs</strong> and a <strong>7-segment display</strong> showing the current score. 
+                Button presses are managed using <strong>hardware interrupts</strong> and programmatic <strong>debouncing</strong> to ensure accurate input detection.
+            </p>
 
-The display module used two serial-to-parallel shift registers (74HC595) to drive the 7-segment displays without relying on built-in Arduino libraries. LEDs and buttons were abstracted through modular functions, ensuring flexibility and clear game logic.
+            <p>
+                Random sequences of numbers are generated using a <strong>Timer1 interrupt</strong>, with correct player inputs progressively increasing the game speed and incorrect inputs resetting the game. 
+                The display system is implemented with two <strong>74HC595 serial-to-parallel shift registers</strong>, driving the 7-segment displays without relying on Arduino’s built-in libraries, allowing for more efficient control and modularity.
+            </p>
 
-The game logic managed sequences, compared user input against generated patterns, and displayed results dynamically. Timer-based difficulty adjustments ensured consistent challenge levels across implementations.
+            <p>
+                The game logic is fully modular: sequences are stored and compared dynamically, LEDs and buttons are managed through separate functions, and timer-based difficulty adjustments provide a consistent challenge. 
+                This architecture allows the game to be easily extended, for example by adding new sequences, increasing difficulty, or integrating additional feedback mechanisms such as sounds.
             </p>
         </section>
 
         <section class="project-details">
             <h2>Key Features of the Speed Game</h2>
-            <ul>
-                <li>💡 Multiple LED lights to create a dynamic gameplay experience</li>
-                <li>🎮 Game logic that increases difficulty as the game progresses</li>
-                <li>🕹️ Button-based user input for responsive interactivity</li>
-                <li>📊 Real-time reaction tracking and score display using a 7-segment display</li>
-                <li>🔧 Custom circuit assembly using LEDs, resistors, and microcontrollers</li>
-            </ul>
+                <ul>
+                    <li>💡 Multiple LEDs controlled via Arduino to provide dynamic visual feedback during gameplay</li>
+                    <li>🎮 Game logic that adapts and increases difficulty based on player performance</li>
+                    <li>🕹️ Button-based user input with hardware interrupts and debouncing for accurate and responsive interaction</li>
+                    <li>📊 Real-time reaction tracking and score display on a 7-segment display driven by 74HC595 shift registers</li>
+                    <li>🔧 Custom hardware setup including LEDs, resistors, buttons, and Arduino microcontroller for a fully functional game circuit</li>
+                </ul>
+
             
         </section>
 
@@ -50,14 +59,15 @@ The game logic managed sequences, compared user input against generated patterns
                 <iframe 
                     width="560" 
                     height="315" 
-                    src="https://unioulu.sharepoint.com/sites/TVT23SPL_R2_Lohi_Kerttula_Laukka_Lindell_Luokkanen/_layouts/15/embed.aspx?UniqueId=0d294a76-e7b0-4c2a-a358-e0e056bc4c90&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="SpedensEsittely.mov"
-                    title="YouTube video player" 
+                    src="https://www.youtube.com/embed/a1tbyGOpeMs" 
+                    title="Arduino speed game Video" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </div>
         </section>
+
         
         <section class="project-details">
             <h2>Project Details</h2>
@@ -71,32 +81,32 @@ The game logic managed sequences, compared user input against generated patterns
                 <tbody>
                     <tr>
                         <td>LED Control</td>
-                        <td>Arduino, C++</td>
+                        <td>Arduino, C++, hardware timers, custom functions</td>
                     </tr>
                     <tr>
                         <td>Game Logic</td>
-                        <td>Arduino, C++</td>
+                        <td>Arduino, C++, sequence management, difficulty scaling</td>
                     </tr>
                     <tr>
                         <td>Button Functionality</td>
-                        <td>Arduino, C++ (with interrupts and debouncing)</td>
+                        <td>Arduino, C++ with hardware interrupts and software debouncing</td>
                     </tr>
                     <tr>
-                        <td>Interactivity</td>
-                        <td>Arduino, C++</td>
+                        <td>User Interaction</td>
+                        <td>Arduino, C++, responsive input handling via buttons</td>
                     </tr>
                     <tr>
                         <td>Display Control</td>
-                        <td>C++, 74HC595 shift registers, 7-segment displays</td>
+                        <td>C++, 7-segment displays driven via 74HC595 shift registers</td>
                     </tr>
                     <tr>
-                        <td>Circuit Assembly</td>
-                        <td>LEDs, buttons, 7-segment display, 74HC595, Arduino</td>
+                        <td>Hardware Setup</td>
+                        <td>LEDs, buttons, 7-segment displays, resistors, Arduino board</td>
                     </tr>
                 </tbody>
             </table>
-            
         </section>
+
         <section class="project-details">
             <h2>GitHub Repository</h2>
             <li>🔗<a href="https://github.com/lohielisabeth/Speed-Game" target="_blank">GitHub Repository of the project</a></li>
