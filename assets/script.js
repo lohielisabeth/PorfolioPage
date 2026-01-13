@@ -55,7 +55,7 @@ let timer;
 function startTimer() {
     timer = setTimeout(() => {
         alert("Aikakatkaisu"); 
-    }, 150000); 
+    }, 1800000); 
 }
 
 function resetTimer() {
